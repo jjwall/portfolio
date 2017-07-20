@@ -1,10 +1,5 @@
 .gig-banner {
   background-color: #81d4fa;
-  z-index: 2;
-}
-
-body {
-  z-index: 2;
 }
 
 .everything {
@@ -25,7 +20,6 @@ body {
 
 canvas {
    position: absolute;
-   z-index: 1;
    top: 5px;
    height:100%;
    width:100%;
@@ -39,6 +33,33 @@ canvas {
   top:0;
   left:0;
   z-index:0
+}
+
+#connect {
+  background-color: #bbdefb;
+  width: 250px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #006064;
+  padding: 20px 20px 20px 20px;
+  margin-top: 40px;
+}
+
+#connect-text {
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #006064;
+}
+
+#iconsButtons {
+  position: absolute;
+  top: 74px;
+  left: 145px;
+}
+
+.icons {
+  margin-top: 5px;
 }
 
 .footer {
