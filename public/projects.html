@@ -11,41 +11,93 @@
 		<link rel="stylesheet" type="text/css" href="/assets/style/projects.css">
 	</head>
 <body>
-	<!-- 	Main page header 	-->
-	<section class="hero is-medium gig-banner">
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title">Jacob Wallace</h1>
-				<h2>Full-Stack Web Developer</h2>
-				<div class="columns">
-					<div class="column">
-						<button class="button is-small index-button" id = "projects">Projects</button>
-					</div>
-					<div class="column">
-						<button class="button is-small index-button" id = "about">About</button>
-					</div>
-					<div class="column">
-						<button class="button is-small index-button" id = "contact">Contact</button>
+	<!-- 	Jumbotron header 	-->
+	<div id="canvas-wrap">
+		<canvas></canvas>
+		<div id="overlay"></div>
+		<section class="hero is-small gig-banner">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns">
+						<div class="column">
+							<h1 class="title">Jacob Wallace</h1>
+							<figure class="image is-128x128 pic">
+								<img src="assets/media/profile_pic.jpg">
+							</figure>
+							<div id="iconsButtons">
+								<div class="columns" style="margin-bottom: 0px;">
+									<div class="column is-1">
+										<a href = "https://github.com/jjwall">
+											<img src = "assets/media/github1.png" alt = "Jacob's LinkedIn" style = "min-width: 30px; max-width: 30px;">
+										</a>
+									</div>
+								</div>
+								<div class="columns" style="margin-bottom: 0px;">
+									<div class="column is-1">
+										<a href = "https://www.linkedin.com/in/jacob-wallace">
+											<img src = "assets/media/linkedin1.png" alt = "Jacob's LinkedIn" style = "min-width: 30px; max-width: 30px;">
+										</a>
+									</div>
+								</div>
+								<div class="columns">
+									<div class="column is-1">
+										<a href = "https://stackoverflow.com/users/7438571/jacob-wallace?tab=profile">
+											<img src = "assets/media/stack1.png" alt = "Jacob's StackOverflow" style = "min-width: 30px; max-width: 30px;">
+										</a>
+									</div>
+								</div>
+							</div>
+							<h2>Full-Stack Web Developer</h2>
+							<button class="button is-small index-button is-info is-inverted is-outlined" id = "projects">Projects</button>
+							<button class="button is-small index-button is-info is-inverted is-outlined" id = "about">About</button>
+							<button class="button is-small index-button is-info is-inverted is-outlined" id = "contact">Contact</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- Main page content -->
-	<!-- <div class="container everything">
-		<div class="main-buttons columns is-fullwidth">
-			<div class="column is-12">
-				<button class="button is-medium index-button" id = "post-sign">Post Sign</button>
-				<br>
-				<br>
-				<button class="button is-medium index-button" id = "sign-date">View Signs By Date</button>
-				<br>
-				<br>
-				<button class="button is-medium index-button" id = "sign-company">View Signs By Company Name</button>
+		</section>
+	</div>
+	<!-- Projects page content -->
+	<div class="container everything">
+		<div class="column is-12 superRobotWars">
+			<div class="columns">
+				<div class="column is-three-quarters">
+					<h1>Super Robot Wars</h1>
+				</div>
+				<div class="column">
+					<a href ="https://github.com/MagentaReds/project-3-srw-multiplayer" class="button is-small" style="width:90px; margin-top: 10px;">
+						<span class="icon">
+							<img src = "assets/media/github1.png" alt = "SRW GitHub" style = "width:20px; margin-right:5px;">
+						</span><strong>GitHub</strong>
+					</a>
+					<a href ="http://srw-og2-multiplayer.herokuapp.com/" class="button is-small" style="width:120px; margin-top: 10px;">
+						<span class="icon">
+							<img src = "assets/media/heroku.png" alt = "SRW Heroku" style = "width:30px; margin-right:5px;">
+						</span><strong>Deployed App</strong>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div> -->
-	<!--link to index.js-->
+		<!-- <a href ="https://github.com/MagentaReds/project-3-srw-multiplayer" class="button is-small" style="width:90px;">
+			<span class="icon">
+				<img src = "assets/media/github1.png" alt = "SRW GitHub" style = "width:20px; margin-right:5px;">
+			</span><strong>GitHub</strong>
+		</a>
+		<a href ="http://srw-og2-multiplayer.herokuapp.com/" class="button is-small" style="width:120px;">
+			<span class="icon">
+				<img src = "assets/media/heroku.png" alt = "SRW Heroku" style = "width:30px; margin-right:5px;">
+			</span><strong>Deployed App</strong>
+		</a> -->
+	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>&copy; Copyright 2017 Jacob Wallace</p>
+			</div>
+		</div>
+	</footer>
+	<!--link to projects.js-->
 	<script type="text/javascript" src="/assets/javascript/projects.js"></script>
 </body>
 </html>

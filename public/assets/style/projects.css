@@ -1,3 +1,64 @@
+body {
+  background: url('../media/sneaker_mesh_fabric.png');
+}
+
+.everything {
+  margin-top: 30px;
+  background-color: white;
+  padding: 1px 15px 25px 15px;
+}
+
+.superRobotWars {
+  background-color: #64b5f6;
+  color: white;
+  font-weight: bold;
+  font-size: 200%;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #006064;
+  padding: 25px 25px 25px 25px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
 .gig-banner {
-  background-color: #00acc1;
+  background-color: #81d4fa;
+}
+
+.pic {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #006064;
+}
+
+canvas {
+   position: absolute;
+   top: 5px;
+   height:100%;
+   width:100%;
+}
+
+#canvas-wrap {
+  position:relative;
+}
+#canvas-wrap canvas {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0
+}
+
+#iconsButtons {
+  position: absolute;
+  top: 74px;
+  left: 145px;
+}
+
+.icons {
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #81d4fa;
+  margin-top: 30px;
 }
