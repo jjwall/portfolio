@@ -7,7 +7,8 @@
 		<script type = "text/javascript" src="/assets/lib/jquery-3.2.1.min.js"></script>
 		<!--link to bulma library-->
 		<link type="text/css" rel="stylesheet" href="/assets/lib/bulma.css">
-		<!-- <link rel="stylesheet" type="text/css" href="/css/index.css"> -->
+		<!--link to projects css file-->
+		<link rel="stylesheet" type="text/css" href="/assets/style/projects.css">
 	</head>
 <body>
 	<!-- 	Main page header 	-->
@@ -16,9 +17,17 @@
 			<div class="container">
 				<h1 class="title">Jacob Wallace</h1>
 				<h2>Full-Stack Web Developer</h2>
-				<button class="button is-small index-button" id = "projects">Projects</button>
-				<button class="button is-small index-button" id = "about">About</button>
-				<button class="button is-small index-button" id = "contact">Contact</button>
+				<div class="columns">
+					<div class="column">
+						<button class="button is-small index-button" id = "projects">Projects</button>
+					</div>
+					<div class="column">
+						<button class="button is-small index-button" id = "about">About</button>
+					</div>
+					<div class="column">
+						<button class="button is-small index-button" id = "contact">Contact</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -32,11 +41,11 @@
 				<button class="button is-medium index-button" id = "sign-date">View Signs By Date</button>
 				<br>
 				<br>
-				<button class="button is-medium index-button" id = "sign-company">View Signs By Company Name</button>		
+				<button class="button is-medium index-button" id = "sign-company">View Signs By Company Name</button>
 			</div>
 		</div>
 	</div> -->
 	<!--link to index.js-->
-	<script type="text/javascript" src="/assets/javascript/index.js"></script>
+	<script type="text/javascript" src="/assets/javascript/projects.js"></script>
 </body>
 </html>

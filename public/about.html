@@ -7,18 +7,36 @@
 		<script type = "text/javascript" src="/assets/lib/jquery-3.2.1.min.js"></script>
 		<!--link to bulma library-->
 		<link type="text/css" rel="stylesheet" href="/assets/lib/bulma.css">
-		<!-- <link rel="stylesheet" type="text/css" href="/css/index.css"> -->
+		<!--link to about css file-->
+		<link rel="stylesheet" type="text/css" href="/assets/style/about.css">
 	</head>
 <body>
 	<!-- 	Main page header 	-->
-	<section class="hero is-medium gig-banner">
+	<section class="hero is-small gig-banner">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title">Jacob Wallace</h1>
-				<h2>Full-Stack Web Developer</h2>
-				<button class="button is-small index-button" id = "projects">Projects</button>
-				<button class="button is-small index-button" id = "about">About</button>
-				<button class="button is-small index-button" id = "contact">Contact</button>
+				<div class="columns">
+					<div class="column">
+						<h1 class="title">Jacob Wallace</h1>
+						<figure class="image is-128x128 pic">
+  						<img src="assets/media/profile_pic.jpg">
+						</figure>
+						<h2>Full-Stack Web Developer</h2>
+						<button class="button is-small index-button is-info is-outlined" id = "projects">Projects</button>
+						<button class="button is-small index-button is-info is-outlined" id = "about">About</button>
+						<button class="button is-small index-button is-info is-outlined" id = "contact">Contact</button>
+					</div>
+					<!-- <div class="column is-one-third">
+						<figure class="image is-128x128">
+  						<img src="http://bulma.io/images/placeholders/128x128.png">
+						</figure>
+					</div> -->
+					<div class="column">
+						<div id="connect">
+							Connect with Me:
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -29,10 +47,18 @@
 				<p>Hi there, I am a full-stack web developer and web designer with a focus on front-end UI dev. As a web developer I have training to build complete full-stack websites. On the front-end, I create interactive user interfaces using JavaScript and some it's well known libraries such as JQuery. For the back-end I utilize technologies including Node for server side development, document-oriented (MongoDB) and relational (MySQL) database management, web services, AJAX calls, RESTful APIs and state management using React. I also have experience using real time databases such as firebase and socket.io.
 				Check out my resume here:
 				<button class="button is-small index-button" id = "resume">Jacob's Tech Resume</button>
-				</p>		
+				</p>
 			</div>
 		</div>
 	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>&copy; Copyright 2017 Jacob Wallace</p>
+			</div>
+		</div>
+	</footer>
 	<!--link to index.js-->
 	<script type="text/javascript" src="/assets/javascript/about.js"></script>
 </body>

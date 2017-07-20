@@ -5,11 +5,15 @@ var path = require("path");
 module.exports = function(app) {
 
 	app.get("/", function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/index.html"));
+		res.sendFile(path.join(__dirname, "../public/projects.html"));
 	});
 
 	app.get("/about", function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/about.html"));
+	});
+
+	app.get("/projects", function(req, res) {
+		res.sendFile(path.join(__dirname, "../public/projects.html"));
 	});
 
 	app.get("/jacob-wallace-resume", function(req, res) {
