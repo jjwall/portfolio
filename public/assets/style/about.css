@@ -1,5 +1,10 @@
 .gig-banner {
   background-color: #81d4fa;
+  z-index: 2;
+}
+
+body {
+  z-index: 2;
 }
 
 .everything {
@@ -16,6 +21,24 @@
   border-style: solid;
   border-width: 3px;
   border-color: #006064;
+}
+
+canvas {
+   position: absolute;
+   z-index: 1;
+   top: 5px;
+   height:100%;
+   width:100%;
+}
+
+#canvas-wrap {
+  position:relative;
+}
+#canvas-wrap canvas {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0
 }
 
 .footer {
