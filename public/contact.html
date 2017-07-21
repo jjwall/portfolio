@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Jacob Wallace's Portfolio</title>
+		<!--link to jquery minified library-->
+		<script type = "text/javascript" src="/assets/lib/jquery-3.2.1.min.js"></script>
+		<!--link to bulma library-->
+		<link type="text/css" rel="stylesheet" href="/assets/lib/bulma.css">
+		<!--link to projects css file-->
+		<link rel="stylesheet" type="text/css" href="/assets/style/contact.css">
+	</head>
+<body>
+	<!-- 	Jumbotron header 	-->
+	<div id="canvas-wrap">
+		<canvas></canvas>
+		<div id="overlay"></div>
+		<section class="hero is-small gig-banner">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns">
+						<div class="column">
+							<h1 class="title">Jacob Wallace</h1>
+							<figure class="image is-128x128 pic">
+								<img src="assets/media/profile_pic.jpg">
+							</figure>
+							<div id="iconsButtons">
+								<div class="columns" style="margin-bottom: 0px;">
+									<div class="column is-1">
+										<a href ="https://github.com/jjwall">
+											<img src ="assets/media/github1.png" alt ="Jacob's LinkedIn" style ="min-width: 30px; max-width: 30px;">
+										</a>
+									</div>
+								</div>
+								<div class="columns" style="margin-bottom: 0px;">
+									<div class="column is-1">
+										<a href ="https://www.linkedin.com/in/jacob-wallace">
+											<img src ="assets/media/linkedin1.png" alt ="Jacob's LinkedIn" style ="min-width: 30px; max-width: 30px;">
+										</a>
+									</div>
+								</div>
+								<div class="columns">
+									<div class="column is-1">
+										<a href ="https://stackoverflow.com/users/7438571/jacob-wallace?tab=profile">
+											<img src ="assets/media/stack1.png" alt="Jacob's StackOverflow" style="min-width: 30px; max-width: 30px;">
+										</a>
+									</div>
+								</div>
+							</div>
+							<h2>Full-Stack Web Developer</h2>
+							<button class="button is-small index-button is-info is-inverted is-outlined" id="projects">Projects</button>
+							<button class="button is-small index-button is-info is-inverted is-outlined" id="about">About</button>
+							<button class="button is-small is-info is-focused" id="contact">Contact</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+  <!-- Contact page content -->
+  <div class="container everything">
+  	<div class="column is-12 contactMe">
+  		<h1>Contact Me</h1>
+  	</div>
+  	<div class="textStyle">
+      <form action="/contact" method="post">
+        <input type="submit">
+      </form>
+  	</div>
+  </div>
+  <!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>&copy; Copyright 2017 Jacob Wallace</p>
+			</div>
+		</div>
+	</footer>
+	<!--link to contact.js-->
+	<script type="text/javascript" src="/assets/javascript/contact.js"></script>
+</body>
+</html>

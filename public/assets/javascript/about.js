@@ -7,6 +7,10 @@ $(document).ready(function(){
 		event.preventDefault();
 	 	window.location.href = "/projects";
 	});
+	$("#contact").on("click", function(event){
+		event.preventDefault();
+	 	window.location.href = "/contact";
+	});
 
 	// canvas code below
 	var canvasWavey = function(info){

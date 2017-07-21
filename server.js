@@ -6,6 +6,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var nodemailer = require("nodemailer");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -36,6 +37,7 @@ app.use(express.static("./public"));
 // ================================================================================
 
 require("./routes/html-routes")(app);
+require("./routes/nodemailer-routes")(app);
 
 // ==============================================================================
 // LISTENER

@@ -1,11 +1,11 @@
 $(document).ready(function(){
+  $("#projects").on("click", function(event){
+		event.preventDefault();
+	 	window.location.href = "/projects";
+	});
 	$("#about").on("click", function(event){
 		event.preventDefault();
 	 	window.location.href = "/about";
-	});
-	$("#contact").on("click", function(event){
-		event.preventDefault();
-	 	window.location.href = "/contact";
 	});
 
 	// canvas code below
