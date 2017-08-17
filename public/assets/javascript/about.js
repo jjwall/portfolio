@@ -13,6 +13,8 @@ $(document).ready(function(){
 	});
 
 	// canvas code below
+   // this canvas animation is a creation of Sean Mann
+   // check out his GitHub at https://github.com/sean-codes
 	var canvasWavey = function(info){
    obj = {
       init: function(info){
